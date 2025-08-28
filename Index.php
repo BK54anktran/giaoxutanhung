@@ -728,55 +728,50 @@
           <div class="box-heading">
             <a href="/tin-tuc-giao-xu">Tin Tức Giáo Xứ</a>
           </div>
+          <?php
+
+          $jsonPath = __DIR__ . '/data/tintucgiaoxu.json';
+
+          $raw = @file_get_contents($jsonPath);
+          $items = json_decode($raw ?: '[]', true);
+
+          function h($v)
+          {
+            return htmlspecialchars((string) ($v ?? ''), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+          }
+
+          if (!is_array($items)) {
+            $items = [];
+          }
+          ?>
+
           <div class="box-content">
-            <div class="col-sm-6 row1">
-              <a href="/tintucgiaoxu.BANH-CHUNG-NGHIA_TINH.php" class="image"><img
-                  src="./Giáo xứ Tân Hưng_files/3000_banh_chung.jpg" class="img-responsive" style="width: 100%;"></a>
-              <a href="/tintucgiaoxu.BANH-CHUNG-NGHIA_TINH.php" class="title">3000 Bánh Chưng nghĩa tình</a>
+            <div class="row" id="news-list">
+              <?php if (empty($items)): ?>
+                <div class="col-sm-12">Không có dữ liệu để hiển thị.</div>
+              <?php else: ?>
+                <?php foreach ($items as $it):
+                  $href = $it['href'] ?? '#';
+                  $image = $it['image'] ?? '';
+                  $title = $it['title'] ?? '';
+                  $tClass = $it['titleClass'] ?? 'title';
+                  $desc = $it['description'] ?? '';
+                  ?>
+                  <div class="col-sm-6 row1">
+                    <a href="<?= h($href) ?>" class="image">
+                      <img src="<?= h($image) ?>" class="img-responsive"
+                        style="width:350px; height:200px; object-fit:cover;" alt="<?= h($title) ?>">
+                    </a>
 
-              <p class="description"></p>
-              <div style="border-bottom: 1px #e5e5e5 solid; margin-bottom: 10px;"></div>
+                    <a href="<?= h($href) ?>" class="<?= h($tClass) ?>"><?= h($title) ?></a>
+
+                    <p class="description"><?= h($desc) ?></p>
+
+                    <div style="border-bottom:1px #e5e5e5 solid; margin-bottom:10px;"></div>
+                  </div>
+                <?php endforeach; ?>
+              <?php endif; ?>
             </div>
-
-
-            <div class="col-sm-6 row1">
-              <a href="/tintucgiaoxu/DANG-KY-GIAO-LY-2025-2026.php" class="image"><img
-                  src="./Giáo xứ Tân Hưng_files/DANG-KY-GIAO-LY-2025-2026.jpg" class="img-responsive"
-                  style="width: 100%;"></a>
-              <a href="/tintucgiaoxu/DANG-KY-GIAO-LY-2025-2026.php" class="title">ĐĂNG KÝ GIÁO LÝ NĂM HỌC 2025 –
-                2026</a>
-
-              <p class="description"></p>
-              <div style="border-bottom: 1px #e5e5e5 solid; margin-bottom: 10px;"></div>
-            </div>
-
-            <div style="clear: both"></div>
-
-            <div class="col-sm-6 row1">
-              <a href="/danh-sach-quy-an-nhan-giup-do-cho-quy-com-nhan-ai-04-2022" class="image"><img
-                  src="./Giáo xứ Tân Hưng_files/04_COM_TU_THIEN-349x196.jpg" class="img-responsive"
-                  style="width: 100%;"></a>
-              <a href="/danh-sach-quy-an-nhan-giup-do-cho-quy-com-nhan-ai-04-2022" class="title2">DANH SÁCH QUÝ ÂN NHÂN
-                GIÚP ĐỠ CHO QUỸ CƠM NHÂN ÁI - 04/2022</a>
-
-              <p class="description">DANH SÁCH QUÝ ÂN NHÂN GIÚP ĐỠ CHO QUỸ CƠM NHÂN ÁI GIÁO XỨ Tân Hưng Website :
-                localhost Tháng…</p>
-              <div style="border-bottom: 1px #e5e5e5 solid; margin-bottom: 10px;"></div>
-            </div>
-
-
-            <div class="col-sm-6 row1">
-              <a href="/danh-sach-an-nhan-quy-com-than-ai-thang-01-2022" class="image"><img
-                  src="./Giáo xứ Tân Hưng_files/05_BAC_AI-349x196.jpg" class="img-responsive" style="width: 100%;"></a>
-              <a href="/danh-sach-an-nhan-quy-com-than-ai-thang-01-2022" class="title2">DANH SÁCH ÂN NHÂN QUỸ CƠM THÂN
-                ÁI - THÁNG 01/2022</a>
-
-              <p class="description"></p>
-              <div style="border-bottom: 1px #e5e5e5 solid; margin-bottom: 10px;"></div>
-            </div>
-
-            <div style="clear: both"></div>
-
           </div>
         </div>
 

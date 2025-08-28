@@ -21,22 +21,22 @@
   <meta name="twitter:description" content="Giáo xứ Tân Hưng">
   <meta name="twitter:title" content="Giáo xứ Tân Hưng">
   <link rel="canonical" href="/">
-  <script async="" src="../Giáo xứ Tân Hưng_files/za.js.download">
+  <script async="" src="./Giáo xứ Tân Hưng_files/za.js.download">
   </script>
-  <script src="../Giáo xứ Tân Hưng_files/cb=gapi.loaded_0" async=""></script>
-  <script src="../Giáo xứ Tân Hưng_files/sdk.js.download" async="" crossorigin="anonymous"></script>
-  <script type="text/javascript" async="" src="../Giáo xứ Tân Hưng_files/plusone.js.download"
+  <script src="./Giáo xứ Tân Hưng_files/cb=gapi.loaded_0" async=""></script>
+  <script src="./Giáo xứ Tân Hưng_files/sdk.js.download" async="" crossorigin="anonymous"></script>
+  <script type="text/javascript" async="" src="./Giáo xứ Tân Hưng_files/plusone.js.download"
     gapi_processed="true"></script>
-  <script id="facebook-jssdk" src="../Giáo xứ Tân Hưng_files/sdk(1).js.download"></script>
-  <script src="../Giáo xứ Tân Hưng_files/jquery-2.2.1.min.js.download"
+  <script id="facebook-jssdk" src="./Giáo xứ Tân Hưng_files/sdk(1).js.download"></script>
+  <script src="./Giáo xứ Tân Hưng_files/jquery-2.2.1.min.js.download"
     integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="../Giáo xứ Tân Hưng_files/bootstrap.min.css">
-  <link rel="stylesheet" href="../Giáo xứ Tân Hưng_files/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="../Giáo xứ Tân Hưng_files/font-awesome.min.css">
-  <link rel="stylesheet" href="../Giáo xứ Tân Hưng_files/superfish.css">
-  <link rel="stylesheet" href="../Giáo xứ Tân Hưng_files/stylesheet.css">
-  <link href="../Giáo xứ Tân Hưng_files/stylesheet.css" rel="stylesheet">
+  <link rel="stylesheet" href="./Giáo xứ Tân Hưng_files/bootstrap.min.css">
+  <link rel="stylesheet" href="./Giáo xứ Tân Hưng_files/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="./Giáo xứ Tân Hưng_files/font-awesome.min.css">
+  <link rel="stylesheet" href="./Giáo xứ Tân Hưng_files/superfish.css">
+  <link rel="stylesheet" href="./Giáo xứ Tân Hưng_files/stylesheet.css">
+  <link href="./Giáo xứ Tân Hưng_files/stylesheet.css" rel="stylesheet">
   <style type="text/css"
     data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">
     .fb_hidden {
@@ -712,166 +712,75 @@
     }
   });
 </script>
-
 <body>
-  <?php include $_SERVER['DOCUMENT_ROOT'] . '/component/header_main.php'; ?>
-  <?php include $_SERVER['DOCUMENT_ROOT'] . '/component/nav_main.php'; ?>
-  <div class="container">
-  </div>
-  <?php
-  // Đổi đường dẫn này sang nơi bạn lưu ảnh
-  $img = '/Giáo xứ Tân Hưng_files/DANG-KY-GIAO-LY-2025-2026.jpg';
-  ?>
-  <div id="common-home" class="container m-t-20">
-    <div class="row gx-block"><!-- 1 hàng đúng chuẩn BS3 -->
-      <!-- Cột ảnh -->
-      <div class="col-sm-5">
-        <img src="<?= $img ?>" alt="Đăng ký giáo lý 2025–2026" class="img-responsive img-rounded"
-          style="display:block; max-width:100%; height:auto;">
-      </div>
+    <?php
+    require __DIR__ . '/inc/content.php';
 
-      <!-- Cột nội dung -->
-      <div class="col-sm-7">
-        <h2 class="title">Đăng ký giáo lý 2025 - 2026</h2>
-        <p>Xin chào các bậc phụ huynh,</p>
-        <p>Chúng tôi xin thông báo về việc đăng ký giáo lý cho năm học 2025 - 2026. Để đảm bảo quá trình đăng ký diễn ra
-          thuận lợi, xin vui lòng theo dõi thông tin dưới đây.</p>
+    // include header/nav của bạn:
+    include $_SERVER['DOCUMENT_ROOT'] . '/component/header_main.php';
+    include $_SERVER['DOCUMENT_ROOT'] . '/component/nav_main.php';
 
-        <h3 style="font-size:18px;margin-top:20px">📣 NHẬN ĐƠN ĐĂNG KÝ GIÁO LÝ NĂM HỌC 2025 – 2026 📣</h3>
+    $slug = $_GET['p'] ?? '';
+    $post = get_post($slug);
+    ?>
+    <div id="common-home" class="container m-t-20">
+        <?php if (!$post): ?>
+            <div class="alert alert-warning">Bài viết không tồn tại.</div>
+        <?php else: ?>
+            <div class="row gx-block">
+                <div class="col-sm-5">
+                    <?php if (!empty($post['image'])): ?>
+                        <img src="<?= h($post['image']) ?>" alt="<?= h($post['title']) ?>" class="img-responsive img-rounded"
+                            style="display:block;max-width:100%;height:auto;">
+                    <?php endif; ?>
+                </div>
 
-        <ol style="padding-left:18px">
-          <li>
-            <strong>Thời gian nhận đơn:</strong> 21/08/2025 → 28/09/2025<br>
-            ⏰ <strong>Giờ nhận đăng ký:</strong>
-            <ul style="margin:6px 0 0 18px">
-              <li>Sáng Chúa Nhật: <strong>08h30 → 10h00</strong></li>
-              <li>Tối Thứ Năm: <strong>19h00 → 20h00</strong></li>
-            </ul>
-            📍 <strong>Địa điểm:</strong> Khuôn viên Giáo xứ Tân Hưng
-          </li>
-          <li>
-            <strong>Đối tượng đăng ký</strong>
-            <ul style="margin:6px 0 0 18px">
-              <li>👉 Thiếu Nhi thuộc Giáo xứ Tân Hưng, từ 5 tuổi bắt đầu học Giáo Lý.</li>
-              <li>👉 Các em đã học năm 2024–2025 không cần đăng ký lại.</li>
-            </ul>
-          </li>
-          <li>
-            <strong>Hồ sơ cần nộp</strong>
-            <ul style="margin:6px 0 0 18px">
-              <li>✅ Bản photo Sổ gia đình Công Giáo (trang của em Thiếu Nhi).</li>
-              <li>✅ Giấy chứng nhận đang học Giáo Lý (nếu có) – dành cho các em đang học ở GX khác muốn chuyển về Tân
-                Hưng.</li>
-            </ul>
-          </li>
-        </ol>
+                <div class="col-sm-7">
+                    <h2 class="title"><?= h($post['title']) ?></h2>
 
-        <p><strong>📌 Kính mời quý phụ huynh sắp xếp thời gian đưa các em đến đăng ký đầy đủ và đúng hạn.</strong></p>
-        <div class="text-muted" style="font-size:12px">#GiaolyTanHung #DangKyGiaoly2025 #TreEmCongGiao #NamHocMoi
-          #GiaoXuTanHung
-        </div>
-        <a href="https://www.facebook.com/share/p/17HUhQCtwL/">https://www.facebook.com/share/p/17HUhQCtwL/</a>
-      </div>
+                    <!-- Style chữ: tiêu đề nhỏ lại, nội dung to hơn -->
+                    <style>
+                        #common-home h2.title {
+                            font-size: 26px;
+                            font-weight: 600;
+                            margin-bottom: 15px;
+                        }
 
-      <!-- Clear float phòng dính cột dưới -->
-      <div class="clearfix"></div>
+                        #common-home p,
+                        #common-home li,
+                        #common-home ol,
+                        #common-home ul {
+                            font-size: 16px;
+                            line-height: 1.6;
+                        }
+
+                        #common-home h3 {
+                            font-size: 18px;
+                            font-weight: 700;
+                            margin-top: 20px;
+                        }
+
+                        .gx-block {
+                            overflow: hidden;
+                        }
+                    </style>
+
+                    <!-- Nội dung HTML từ JSON -->
+                    <div class="post-content">
+                        <?= $post['content_html'] /* tin cậy nội bộ */ ?>
+                    </div>
+
+                    <?php if (!empty($post['tags'])): ?>
+                        <div class="text-muted" style="margin-top:8px;font-size:12px">
+                            <?php foreach ($post['tags'] as $t): ?>
+                                <span class="label label-default" style="margin-right:4px;"><?= h($t) ?></span>
+                            <?php endforeach; ?>
+                        </div>
+                    <?php endif; ?>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        <?php endif; ?>
     </div>
-  </div>
-  <div class="container" style="margin-top: 20px;">
-  </div>
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-2">
-
-          <h4 class="footer-title">Thông tin</h4>
-
-          <a href="/tin-tuc-giao-xu" style="display: block; margin-top: 8px;">Tin Tức Giáo
-            Xứ</a>
-          <a href="/thong-bao" style="display: block; margin-top: 8px;">Thông Báo</a>
-          <a href="/tin-tuc-giao-hoi" style="display: block; margin-top: 8px;">Tin Tức
-            Giáo Hội</a>
-        </div>
-        <div class="col-sm-6">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.4077235621544!2d106.63628137451822!3d10.856561457711537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175298d163dcfd5%3A0x6c1667613c4b3f11!2zR2nDoW8geOG7qSBUw6JuIEjGsG5n!5e0!3m2!1svi!2s!4v1708148215486!5m2!1svi!2s"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%"
-            height="200" frameborder="0" style="border:0"> </iframe>
-        </div>
-        <div class="col-sm-4">
-          <p><b><span style="font-size: 14px;">TRANG THÔNG TIN ĐIỆN TỬ GIÁO XỨ TÂN HƯNG</span></b></p>
-          <p><b>Địa chỉ:</b> 1 QL1A, Tân Thới Hiệp, Quận 12, Thành phố Hồ Chí Minh</p>
-          <p><b>Điện thoại liên hệ: 0982 503 112</b></p>
-          <p><b></b></p>
-        </div>
-        <!--div class="col-sm-4">
-                                    <div class="fb-page" data-href="https://www.facebook.com/FacebookVietnam/" data-small-header="false"
-                         data-adapt-container-width="true" data-hide-cover="false"
-                         data-show-facepile="true"></div>
-                            </div--->
-      </div>
-    </div>
-  </footer>
-  <div class="powered">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-7">
-          © Copyright 2024 Giáo Xứ Tân Hưng. Thiết kế bởi <a target="_blank" href="HaidangIT">HaidangIT</a>
-        </div>
-        <div class="col-sm-5">
-          <ul class="list-inline pull-right" style="margin-bottom: 0;">
-            <li><a href="https://www.facebook.com/FacebookVietnam/" target="_blank"><i class="fa fa-facebook"
-                  aria-hidden="true" style="font-size: 20px;"></i></a></li>
-            <li><a href="/#" target="_blank"><i class="" aria-hidden="true" style="font-size: 20px;"></i></a></li>
-            <li><a href="/#" target="_blank"><i class="" aria-hidden="true" style="font-size: 20px;"></i></a></li>
-            <li><a href="/#" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"
-                  style="font-size: 20px;"></i></a></li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <script src="../Giáo xứ Tân Hưng_files/bootstrap.min.js.download"></script>
-  <script src="../Giáo xứ Tân Hưng_files/hoverIntent.js.download"></script>
-  <script src="../Giáo xứ Tân Hưng_files/superfish.min.js.download"></script>
-  <!-- Html Tag-->
-
-  <!-- Facebook script -->
-  <div id="fb-root" class=" fb_reset">
-    <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
-      <div></div>
-    </div>
-  </div>
-  <script type="text/javascript">
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.10&appId=829732533863539";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-
-  <!-- Google Plus script -->
-  <script type="text/javascript">
-    window.___gcfg = { lang: 'vi' };
-    (function () {
-      var po = document.createElement('script');
-      po.type = 'text/javascript';
-      po.async = true;
-      po.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(po, s);
-    })();
-  </script>
-
-  <!-- Zalo -->
-  <script src="../Giáo xứ Tân Hưng_files/sdk(2).js.download"></script>
-  <div id="app" class="zs"></div>
-
-</body>
-
-</html>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/component/footer_main.php'; ?>
+</body>F
