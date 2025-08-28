@@ -722,7 +722,9 @@
     <div class="row" style="margin-bottom: 0;">
       <div id="content" class="col-sm-8">
         <div class="content_custom">
-          <p><img src="./Giáo xứ Tân Hưng_files/LadyRosaryVs.gif" alt="" width="574" height="400"></p>
+          <p>
+            <img src="./Giáo xứ Tân Hưng_files/LadyRosaryVs.gif" alt="" style="max-width:100%; height:auto;">
+          </p>
         </div>
         <div class="box type2" style="margin-top: 30px;">
           <div class="box-heading">
