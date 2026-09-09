@@ -7,44 +7,44 @@
                         <a href="/">TRANG CHỦ</a>
                     </li>
                     <li>
-                        <a href="/gioithieu.php">GIỚI THIỆU</a>
+                        <a href="/">GIỚI THIỆU</a>
                     </li>
                     <li class="current">
-                        <a href="/tintucgiaoxu.php">TIN TỨC GIÁO XỨ >><i aria-hidden="true"></i></a>
+                        <a href="/">TIN TỨC GIÁO XỨ >><i aria-hidden="true"></i></a>
                         <ul>
                             <li>
-                                <a href="/thumucvu.php">THƯ MỤC VỤ</a>
+                                <a href="/">THƯ MỤC VỤ</a>
                             </li>
                             <li>
-                                <a href="/video-hinh-anh">VIDEO &amp; HÌNH ẢNH</a>
+                                <a href="/">VIDEO &amp; HÌNH ẢNH</a>
                             </li>
                             <li>
-                                <a href="/bai-viet">BÀI VIẾT &amp; SƯU TẦM</a>
+                                <a href="/">BÀI VIẾT &amp; SƯU TẦM</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="/tin-tuc-giao-hoi">TIN TỨC GIÁO HỘI</a>
+                        <a href="/">TIN TỨC GIÁO HỘI</a>
                     </li>
                     <li class="current">
-                        <a href="/thong-bao">THÔNG BÁO >><i aria-hidden="true"></i></a>
+                        <a href="/">THÔNG BÁO >><i aria-hidden="true"></i></a>
                         <ul>
                             <li>
-                                <a href="/bac-ai">BÁC ÁI</a>
+                                <a href="/">BÁC ÁI</a>
                             </li>
                             <li>
-                                <a href="/hon-nhan">HÔN NHÂN</a>
+                                <a href="/">HÔN NHÂN</a>
                             </li>
                             <li>
-                                <a href="/ve-nha-chua">VỀ NHÀ CHÚA</a>
+                                <a href="/">VỀ NHÀ CHÚA</a>
                             </li>
                             <li>
-                                <a href="/chuong-trinh-cac-ngay-le">CHƯƠNG TRÌNH CÁC NGÀY LỄ</a>
+                                <a href="/">CHƯƠNG TRÌNH CÁC NGÀY LỄ</a>
                             </li>
                         </ul>
                     </li>
                     <li class="current">
-                        <a href="/thong-bao">BIỂU MẪU >><i aria-hidden="true"></i></a>
+                        <a href="/">BIỂU MẪU >><i aria-hidden="true"></i></a>
                         <ul>
                             <li>
                                 <a href="/TaiLieu/CHỨNG CHỈ RỬA TỘI VÀ THÊM SỨC.docx" download>CHỨNG CHỈ RỬA TỘI VÀ THÊM
@@ -132,28 +132,28 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a href=""><strong>TRANG CHỦ</strong></a></li>
-                        <li><a href="/gioi-thieu"><strong>GIỚI THIỆU</strong></a></li>
+                        <li><a href="/"><strong>GIỚI THIỆU</strong></a></li>
                         <li class="dropdown">
                             <a href="/#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                 aria-haspopup="true" aria-expanded="false"><strong>TIN TỨC GIÁO XỨ</strong> <span
                                     class="caret"></span></a>
                             <ul class="dropdown-menu" style="text-align: center;">
-                                <li><a href="/thu-muc-vu"><strong>THƯ MỤC VỤ</strong></a></li>
-                                <li><a href="/video-hinh-anh"><strong>VIDEO &amp; HÌNH ẢNH</strong></a>
+                                <li><a href="/"><strong>THƯ MỤC VỤ</strong></a></li>
+                                <li><a href="/"><strong>VIDEO &amp; HÌNH ẢNH</strong></a>
                                 </li>
-                                <li><a href="/bai-viet"><strong>BÀI VIẾT &amp; SƯU TẦM</strong></a></li>
+                                <li><a href="/"><strong>BÀI VIẾT &amp; SƯU TẦM</strong></a></li>
                             </ul>
                         </li>
-                        <li><a href="/tin-tuc-giao-hoi"><strong>TIN TỨC GIÁO HỘI</strong></a></li>
+                        <li><a href="/"><strong>TIN TỨC GIÁO HỘI</strong></a></li>
                         <li class="dropdown">
                             <a href="/#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                 aria-haspopup="true" aria-expanded="false"><strong>THÔNG BÁO</strong> <span
                                     class="caret"></span></a>
                             <ul class="dropdown-menu" style="text-align: center;">
-                                <li><a href="/bac-ai"><strong>BÁC ÁI</strong></a></li>
-                                <li><a href="/hon-nhan"><strong>HÔN NHÂN</strong></a></li>
-                                <li><a href="/ve-nha-chua"><strong>VỀ NHÀ CHÚA</strong></a></li>
-                                <li><a href="/chuong-trinh-cac-ngay-le"><strong>CHƯƠNG TRÌNH CÁC NGÀY
+                                <li><a href="/"><strong>BÁC ÁI</strong></a></li>
+                                <li><a href="/"><strong>HÔN NHÂN</strong></a></li>
+                                <li><a href="/"><strong>VỀ NHÀ CHÚA</strong></a></li>
+                                <li><a href="/"><strong>CHƯƠNG TRÌNH CÁC NGÀY
                                             LỄ </strong></a></li>
                             </ul>
                         </li>
@@ -228,7 +228,7 @@
                             <a href="https://giaodan.giaoxutanhung.com/">GIÁO DÂN</a>
                         </li>
                         <li>
-                            <a href="/lien-he"><strong>LIÊN HỆ</strong></a>
+                            <a href="/lienhe.php"><strong>LIÊN HỆ</strong></a>
                         </li>
                     </ul>
                 </div><!--/.nav-collapse -->
