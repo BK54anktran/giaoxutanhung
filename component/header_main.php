@@ -1,3 +1,5 @@
+<link rel="icon" type="image/png" href="/LOGO.png">
+<link rel="shortcut icon" type="image/png" href="/LOGO.png">
 <style>
   /* Mobile: màn hình nhỏ hơn 768px */
   @media (max-width: 767px) {
