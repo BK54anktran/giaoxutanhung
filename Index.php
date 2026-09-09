@@ -785,83 +785,44 @@
             <a href="/tin-tuc-giao-hoi">Tin Tức Giáo Hội</a>
           </div>
           <div class="box-content">
-            <div class="col-sm-3">
-              <a href="/thu-muc-vu-mua-chay-va-phuc-sinh-2022" class="image"><img
-                  src="./Giáo xứ Tân Hưng_files/03_TGM-340x300.jpg" class="img-responsive" style="width: 100%;"></a>
-              <a href="/thu-muc-vu-mua-chay-va-phuc-sinh-2022" class="title">Thư mục vụ
-                Mùa Chay và Phục Sinh 2022</a>
-            </div>
-            <div class="col-sm-3">
-              <a href="/duc-giao-hoang-keu-goi-tran-trong-dieu-nho-nhat-nhan-giang-sinh" class="image"><img
-                  src="./Giáo xứ Tân Hưng_files/su-diep-dtc-pahnxico-gui-lien-hiep-quoc-75-nam-thanh-lap-340x300.jpg"
-                  class="img-responsive" style="width: 100%;"></a>
-              <a href="/duc-giao-hoang-keu-goi-tran-trong-dieu-nho-nhat-nhan-giang-sinh" class="title">ĐỨC GIÁO HOÀNG
-                KÊU GỌI TRÂN TRỌNG "ĐIỀU NHỎ NHẶT" NHÂN GIÁNG SINH</a>
-            </div>
-            <div class="col-sm-3">
-              <a href="/song-bac-ai-cung-di-qua-dai-dich" class="image"><img
-                  src="./Giáo xứ Tân Hưng_files/image_6483441-34-340x300.jpg" class="img-responsive"
-                  style="width: 100%;"></a>
-              <a href="/song-bac-ai-cung-di-qua-dai-dich" class="title">"SỐNG BÁC ÁI CÙNG
-                ĐI QUA ĐẠI DỊCH"</a>
-            </div>
-            <div class="col-sm-3">
-              <a href="/toa-tong-giam-muc-sai-gon-thong-bao-cho-phep-giai-toi-tap-the-16-12-2021" class="image"><img
-                  src="/" class="img-responsive" style="width: 100%;"></a>
-              <a href="/toa-tong-giam-muc-sai-gon-thong-bao-cho-phep-giai-toi-tap-the-16-12-2021" class="title">Tòa Tổng
-                Giám mục Sài Gòn: Thông báo cho phép giải tội tập thể (16-12-2021)</a>
-            </div>
-            <div style="clear: both"></div>
-          </div>
-        </div>
-
-        <div class="box type1" style="margin-top: 30px;">
-          <div class="box-heading">
-            <a href="/thong-bao">Thông Báo</a>
-          </div>
-          <div class="box-content">
-            <div class="col-sm-6 col1">
-              <a href="/quy-com-than-ai-thang-03-2023" class="image"><img
-                  src="./Giáo xứ Tân Hưng_files/04_COM_TU_THIEN-340x220.jpg" class="img-responsive"
-                  style="width: 100%;"></a>
-              <a href="/quy-com-than-ai-thang-03-2023" class="title">QUỸ CƠM THÂN ÁI THÁNG
-                03/2023</a>
-              <p class="description">&nbsp; </p>
-              <br>
-            </div>
-            <div class="col-sm-6 col2">
-              <a href="/quy-com-than-ai-thang-02-2023" class="row mb-0">
-                <div class="col-md-3 full-width"><img src="./Giáo xứ Tân Hưng_files/04_COM_TU_THIEN-340x220.jpg"
-                    class="img-responsive" style="width: 100%;"></div>
-                <div class="col-md-9 des">
-                  QUỸ CƠM THÂN ÁI THÁNG 02/2023
-                  <p class="description">&nbsp; ...</p>
+            <div class="row" style="margin-left:0; margin-right:0; display:flex; flex-wrap:wrap;">
+              <div class="col-sm-6 row1" style="display:flex; flex-direction:column;">
+                <a href="/baiviet.php?p=khanh-thanh-nha-huu-duong-linh-muc-phan-thiet" class="image">
+                  <img src="./Giáo xứ Tân Hưng_files/KHANH-THANH-NHA-HUU-DUONG-PHAN-THIET-1.webp"
+                    class="img-responsive"
+                    style="width:100%; height:200px; object-fit:cover; object-position:top;"></a>
+                <a href="/baiviet.php?p=khanh-thanh-nha-huu-duong-linh-muc-phan-thiet" class="title">Khánh thành
+                  Nhà Hưu Dưỡng Linh Mục Giáo phận Phan Thiết</a>
+                <div style="border-bottom:1px #e5e5e5 solid; margin-top:auto; padding-top:10px; margin-bottom:10px;">
                 </div>
-              </a>
-              <a href="/quy-com-than-ai-thang-01-2023" class="row mb-0">
-                <div class="col-md-3 full-width"><img src="./Giáo xứ Tân Hưng_files/04_COM_TU_THIEN-340x220.jpg"
-                    class="img-responsive" style="width: 100%;"></div>
-                <div class="col-md-9 des">
-                  QUỸ CƠM THÂN ÁI THÁNG 01/2023
-                  <p class="description">&nbsp; ...</p>
+              </div>
+              <div class="col-sm-6 row1" style="display:flex; flex-direction:column;">
+                <a href="/baiviet.php?p=thu-gui-hoc-sinh-sinh-vien-cong-giao-tgp-ha-noi-2026-2027" class="image">
+                  <img src="./Giáo xứ Tân Hưng_files/THU-GUI-HSSV-TGP-HANOI-2026-2027.jpg" class="img-responsive"
+                    style="width:100%; height:200px; object-fit:cover; object-position:top;"></a>
+                <a href="/baiviet.php?p=thu-gui-hoc-sinh-sinh-vien-cong-giao-tgp-ha-noi-2026-2027" class="title">Thư
+                  gửi Học sinh, Sinh viên Công giáo TGP Hà Nội nhân dịp năm học mới 2026-2027</a>
+                <div style="border-bottom:1px #e5e5e5 solid; margin-top:auto; padding-top:10px; margin-bottom:10px;">
                 </div>
-              </a>
-              <a href="/quy-com-than-ai-thang-12-2022" class="row mb-0">
-                <div class="col-md-3 full-width"><img src="./Giáo xứ Tân Hưng_files/04_COM_TU_THIEN-340x220.jpg"
-                    class="img-responsive" style="width: 100%;"></div>
-                <div class="col-md-9 des">
-                  QUỸ CƠM THÂN ÁI THÁNG 12/2022
-                  <p class="description">...</p>
+              </div>
+              <div class="col-sm-6 row1" style="display:flex; flex-direction:column;">
+                <a href="/baiviet.php?p=nhip-song-giao-hoi-viet-nam-so-90" class="image">
+                  <img src="./Giáo xứ Tân Hưng_files/NHIP-SONG-GIAO-HOI-VN-SO-90.jpg" class="img-responsive"
+                    style="width:100%; height:200px; object-fit:cover; object-position:top;"></a>
+                <a href="/baiviet.php?p=nhip-song-giao-hoi-viet-nam-so-90" class="title">Nhịp Sống Giáo Hội Việt
+                  Nam Số 90: Mùa Thụ Tạo - Khai Giảng - Mục Vụ</a>
+                <div style="border-bottom:1px #e5e5e5 solid; margin-top:auto; padding-top:10px; margin-bottom:10px;">
                 </div>
-              </a>
-              <a href="/quy-com-than-ai-thang-11-2022" class="row mb-0">
-                <div class="col-md-3 full-width"><img src="./Giáo xứ Tân Hưng_files/04_COM_TU_THIEN-340x220.jpg"
-                    class="img-responsive" style="width: 100%;"></div>
-                <div class="col-md-9 des">
-                  QUỸ CƠM THÂN ÁI THÁNG 11/2022
-                  <p class="description">...</p>
+              </div>
+              <div class="col-sm-6 row1" style="display:flex; flex-direction:column;">
+                <a href="/baiviet.php?p=ky-hop-thuong-nien-uy-ban-kinh-thanh-phat-diem-2026" class="image">
+                  <img src="./Giáo xứ Tân Hưng_files/UY-BAN-KINH-THANH-PHAT-DIEM-2026-1.jpg" class="img-responsive"
+                    style="width:100%; height:200px; object-fit:cover; object-position:top;"></a>
+                <a href="/baiviet.php?p=ky-hop-thuong-nien-uy-ban-kinh-thanh-phat-diem-2026" class="title">Kỳ họp
+                  thường niên Ủy ban Kinh Thánh tại Tòa Giám mục Phát Diệm năm 2026</a>
+                <div style="border-bottom:1px #e5e5e5 solid; margin-top:auto; padding-top:10px; margin-bottom:10px;">
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>

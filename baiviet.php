@@ -729,7 +729,19 @@
         <?php if (!$post): ?>
             <div class="alert alert-warning">Bài viết không tồn tại.</div>
         <?php else: ?>
+            <?php $imageOnTop = ($post['image_layout'] ?? '') === 'top'; ?>
             <div class="row gx-block">
+                <?php if ($imageOnTop): ?>
+                <div class="col-sm-12">
+                    <?php if (!empty($post['image'])): ?>
+                        <a href="<?= h($post['image']) ?>" target="_blank" rel="noopener">
+                            <img src="<?= h($post['image']) ?>" alt="<?= h($post['title']) ?>" class="img-responsive img-rounded"
+                                style="display:block;width:100%;height:auto;cursor:zoom-in;margin-bottom:20px;">
+                        </a>
+                    <?php endif; ?>
+
+                    <h2 class="title"><?= h($post['title']) ?></h2>
+                <?php else: ?>
                 <div class="col-sm-5">
                     <?php if (!empty($post['image'])): ?>
                         <a href="<?= h($post['image']) ?>" target="_blank" rel="noopener">
@@ -741,6 +753,7 @@
 
                 <div class="col-sm-7">
                     <h2 class="title"><?= h($post['title']) ?></h2>
+                <?php endif; ?>
 
                     <!-- Style chữ: tiêu đề nhỏ lại, nội dung to hơn -->
                     <style>
