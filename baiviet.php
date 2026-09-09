@@ -745,6 +745,7 @@
                         #common-home h2.title {
                             font-size: 26px;
                             font-weight: 600;
+                            margin-top: 0;
                             margin-bottom: 15px;
                         }
 
