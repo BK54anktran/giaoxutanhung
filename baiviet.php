@@ -730,8 +730,8 @@
             <div class="row gx-block">
                 <div class="col-sm-5">
                     <?php if (!empty($post['image'])): ?>
-                        <img src="<?= h($post['image']) ?>" alt="<?= h($post['title']) ?>" class="img-responsive img-rounded"
-                            style="display:block;max-width:100%;height:auto;">
+                        <img src="<?= h($post['image']) ?>" alt="<?= h($post['title']) ?>" class="img-responsive img-rounded js-zoomable"
+                            style="display:block;max-width:100%;height:auto;cursor:zoom-in;">
                     <?php endif; ?>
                 </div>
 
@@ -782,5 +782,28 @@
             </div>
         <?php endif; ?>
     </div>
+    <div id="img-zoom-overlay" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.85);cursor:zoom-out;text-align:center;">
+        <span id="img-zoom-close" style="position:absolute;top:15px;right:25px;color:#fff;font-size:32px;line-height:1;cursor:pointer;">&times;</span>
+        <img id="img-zoom-full" src="" alt="" style="max-width:95%;max-height:95%;margin-top:2.5vh;">
+    </div>
+    <script>
+        (function () {
+            var overlay = document.getElementById('img-zoom-overlay');
+            var fullImg = document.getElementById('img-zoom-full');
+
+            document.querySelectorAll('.js-zoomable').forEach(function (img) {
+                img.addEventListener('click', function () {
+                    fullImg.src = this.src;
+                    fullImg.alt = this.alt;
+                    overlay.style.display = 'block';
+                });
+            });
+
+            overlay.addEventListener('click', function () {
+                overlay.style.display = 'none';
+                fullImg.src = '';
+            });
+        })();
+    </script>
     <?php include $_SERVER['DOCUMENT_ROOT'] . '/component/footer_main.php'; ?>
 </body>F

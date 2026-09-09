@@ -1,30 +1,23 @@
 [
     {
-        "href": "/tintucgiaoxu/DANG-KY-GIAO-LY-2025-2026.php",
-        "image": "./Giáo xứ Tân Hưng_files/DANG-KY-GIAO-LY-2025-2026.jpg",
-        "title": "ĐĂNG KÝ GIÁO LÝ NĂM HỌC 2025 – 2026",
+        "href": "/baiviet.php?p=dieu-chinh-gio-hoc-giao-ly-2026-2027",
+        "image": "./Giáo xứ Tân Hưng_files/DIEU-CHINH-GIO-HOC-GIAO-LY-2026-2027.jpg",
+        "title": "THÔNG BÁO",
         "titleClass": "title",
-        "description": ""
+        "description": "Về việc: Điều chỉnh thời gian tổ chức các giờ học giáo lý năm học 2026 - 2027"
     },
     {
-        "href": "/tintucgiaoxu.BANH-CHUNG-NGHIA_TINH.php",
-        "image": "./Giáo xứ Tân Hưng_files/3000_banh_chung.jpg",
-        "title": "3000 Bánh Chưng nghĩa tình",
+        "href": "/baiviet.php?p=dang-ky-hoc-giao-ly-2026-2027",
+        "image": "./Giáo xứ Tân Hưng_files/DANG-KY-HOC-GIAO-LY-2026-2027.jpg",
+        "title": "ĐĂNG KÝ HỌC GIÁO LÝ NĂM HỌC 2026 - 2027",
         "titleClass": "title",
-        "description": ""
+        "description": "Xứ đoàn Thánh Carlo Acutis - Giáo xứ Tân Hưng, Hóc Môn"
     },
     {
-        "href": "/danh-sach-quy-an-nhan-giup-do-cho-quy-com-nhan-ai-04-2022",
-        "image": "./Giáo xứ Tân Hưng_files/04_COM_TU_THIEN-349x196.jpg",
-        "title": "DANH SÁCH QUÝ ÂN NHÂN GIÚP ĐỠ CHO QUỸ CƠM NHÂN ÁI - 04/2022",
-        "titleClass": "title2",
-        "description": "DANH SÁCH QUÝ ÂN NHÂN GIÚP ĐỠ CHO QUỸ CƠM NHÂN ÁI GIÁO XỨ Tân Hưng Website"
-    },
-    {
-        "href": "/danh-sach-an-nhan-quy-com-than-ai-thang-01-2022",
-        "image": "./Giáo xứ Tân Hưng_files/05_BAC_AI-349x196.jpg",
-        "title": "DANH SÁCH ÂN NHÂN QUỸ CƠM THÂN ÁI - THÁNG 01/2022",
-        "titleClass": "title2",
-        "description": ""
+        "href": "/baiviet.php?p=khai-giang-giao-ly-hon-nhan-du-tong-2026",
+        "image": "./Giáo xứ Tân Hưng_files/KHAI-GIANG-GIAO-LY-HON-NHAN-DU-TONG-2026.jpg",
+        "title": "KHAI GIẢNG LỚP GIÁO LÝ HÔN NHÂN & DỰ TÒNG",
+        "titleClass": "title",
+        "description": "Khai giảng Thứ 2, ngày 24/8/2026 lúc 19h30"
     }
 ]
